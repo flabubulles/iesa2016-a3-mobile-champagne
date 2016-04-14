@@ -45,7 +45,7 @@ var app = {
                 // $('#name').html(finder);
 
                 function onSuccess(contacts) {
-                    $('#name').html(contacts[0].name.givenName+' '+contacts[0].name.familyName);
+                    $('#name').html(contacts[0].name.givenName+' '+contacts[0].name.familyName+' '+contacts[0].phoneNumbers[0].value);
                     alert('Found ' + contacts.length + ' contacts.');
                 };
 
