@@ -16,7 +16,7 @@ Nom du projet : Champagne
 * Plugin Géolocalisation
 
 ### User Story : Contact
-*Titre : Demander un renseignement à un de mes contacts
+Titre : Demander un renseignement à un de mes contacts
 
 * En tant que : utilisateur de "Champagne"
 * Je veux : demande un avis sur des boissons à l'un de mes contacts.
@@ -26,7 +26,7 @@ Descrition - Question:
 * Contact (API)
 
 ### User Story : Camera
-* Titre : Partager une photo de boisson
+Titre : Partager une photo de boisson
 
 * En tant que : utilisateur de "Champagne"
 * Je veux : prendre une photo d'une boisson 
