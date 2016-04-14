@@ -36,7 +36,7 @@ Descrition - Question:
 * Caméra (API)
 
 ### User Story : Geolocalisation
-* Titre : Trouvez les shops les moins cher autour de moi
+Titre : Trouvez les shops les moins cher autour de moi
 
 * En tant que : utilisateur de "Champagne"
 * Je veux : retouvez les shop de boissons proposant les meilleurs prix autour de moi
