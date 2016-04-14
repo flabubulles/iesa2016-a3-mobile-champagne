@@ -34,6 +34,34 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        var findContacts = function() {
+
+
+            $('#findButton').click(function() {
+
+                var finder = $('#find').val();
+                // $('#name').html(finder);
+
+                function onSuccess(contacts) {
+                    $('#name').html(contacts[0].name.givenName+' '+contacts[0].name.familyName);
+                    alert('Found ' + contacts.length + ' contacts.');
+                };
+
+                function onError(contactError) {
+                    alert('onError!');
+                };
+
+                // find contact 
+                var options = new ContactFindOptions();
+                options.filter= finder; 
+                var fields = ["displayName", "name"];
+                navigator.contacts.find(fields, onSuccess, onError, options);
+
+            });
+        }
+
+        findContacts();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
