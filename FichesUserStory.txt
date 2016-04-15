@@ -8,6 +8,7 @@ Nom du projet : Champagne
 * Plugin Caméra
 * Plugin Géolocalisation
 
+
 ### User Story : Contact
 Titre : Demander un renseignement à un de mes contacts
 
@@ -17,6 +18,7 @@ Titre : Demander un renseignement à un de mes contacts
 
 Descrition - Question:
 * Contact (API)
+
 
 ### User Story : Camera
 Titre : Partager une photo de boisson
@@ -28,6 +30,7 @@ Titre : Partager une photo de boisson
 Descrition - Question:
 * Caméra (API)
 
+
 ### User Story : Geolocalisation
 Titre : Trouvez les shops les moins cher autour de moi
 
@@ -37,3 +40,57 @@ Titre : Trouvez les shops les moins cher autour de moi
 
 Descrition - Question:
 * Géolocalisation (API)
+
+
+## JOUR 2 
+-- Utilisations des éléments :
+
+* Plugin Thème UI
+* Plugin Globalization
+* Plugin Analytics
+* Plugin Accès remote
+
+### User Story : Thème UI
+Titre : Naviguer intuitivement
+
+* En tant que : utilisateur de "Champagne"
+* Je veux : avoir une interface agréable et simple
+* Afin de : pouvoir me repérer facilement dans l'application
+
+Descrition - Question:
+* Thème UI (API)
+
+
+### User Story : Globalization
+Titre : Accèder au site en multilingues
+
+* En tant que : passionné de voyages
+* Je veux : que mes contacts à l'étranger accèdent à cette application
+* Afin de : pouvoir partager mes boissons préférées testées lors de mes voyages
+
+Descrition - Question:
+* Globalization (API)
+
+ 
+
+
+### User Story : Analytics
+Titre : Mesurer la portée des publications
+
+* En tant que : blogeur influenceur
+* Je veux : voir quelles boissons que j'ai proposé plaisent le plus à mes contacts
+* Afin de : pouvoir partager mes top recettes
+
+Descrition - Question:
+* Analytics (API)
+
+
+### User Story : Accès remote
+Titre : Toucher le plus grand nombre de contacts possibles
+
+* En tant que : utilisateur de réseaux sociaux
+* Je veux : pouvoir lier l'application à facebook
+* Afin de : pouvoir toucher tous mes  contacts et accèder à leurs préférences
+
+Descrition - Question:
+* Accès remote (API)
