@@ -7,3 +7,6 @@ Nom du projet : Champagne
 * Yohan Leao
 * Raphael Morin
 * Pauline Risselet
+
+## Pitch :
+Grâce à l'application Champagne, retrouver les boissons préférées de vos amis Facebook
