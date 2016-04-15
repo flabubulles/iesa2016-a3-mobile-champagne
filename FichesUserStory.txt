@@ -54,8 +54,8 @@ Descrition - Question:
 Titre : Naviguer intuitivement
 
 * En tant que : utilisateur de "Champagne"
-* Je veux : avoir une interface agréable et simple
-* Afin de : pouvoir me repérer facilement dans l'application
+* Je veux : avoir une interface agréable et simple 
+* Afin de : pouvoir me repérer facilement dans l'application / retrouver facilement l'application parmis toutes celles que je possède.
 
 Descrition - Question:
 * Thème UI (API)
@@ -77,15 +77,15 @@ Descrition - Question:
 ### User Story : Analytics
 Titre : Mesurer la portée des publications
 
-* En tant que : blogeur influenceur
-* Je veux : voir quelles boissons que j'ai proposé plaisent le plus à mes contacts
-* Afin de : pouvoir partager mes top recettes
+* En tant que : créateur de l'application
+* Je veux : mesurer la porté de mon aplication
+* Afin de : pouvoir améliorer les points faibles de mon application
 
 Descrition - Question:
 * Analytics (API)
 
 
-### User Story : Accès remote
+### User Story : Accès remote (à revoir)
 Titre : Toucher le plus grand nombre de contacts possibles
 
 * En tant que : utilisateur de réseaux sociaux
