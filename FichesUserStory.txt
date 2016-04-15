@@ -71,8 +71,6 @@ Titre : Accèder au site en multilingues
 Descrition - Question:
 * Globalization (API)
 
- 
-
 
 ### User Story : Analytics
 Titre : Mesurer la portée des publications
