@@ -7,6 +7,7 @@ Une story est considérée comme terminée quand son fonctionnement est validé sur 
 
 L'équipe Champagne dispose de :
 - 2 mac portable
+- 1 mac fixe
 - 2 ordinateur portable avec système d'exploitation Windows 8 et Windows 10
 
 Pour valider une story :
