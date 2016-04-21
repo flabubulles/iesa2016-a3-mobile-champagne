@@ -36,6 +36,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         app.findPicture();
+        StatusBar.hide();
         //app.getPosition();
 
         var findContacts = function() {

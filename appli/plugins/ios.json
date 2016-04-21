@@ -18,6 +18,9 @@
         },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.champagne.cordova"
         }
     },
     "dependent_plugins": {}

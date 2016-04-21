@@ -151,6 +151,14 @@ module.exports = [
         "clobbers": [
             "navigator.geolocation"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "id": "cordova-plugin-statusbar.statusbar",
+        "pluginId": "cordova-plugin-statusbar",
+        "clobbers": [
+            "window.StatusBar"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -159,7 +167,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.1",
     "cordova-plugin-camera": "2.1.1",
     "cordova-plugin-contacts": "2.0.1",
-    "cordova-plugin-geolocation": "2.1.0"
+    "cordova-plugin-geolocation": "2.1.0",
+    "cordova-plugin-statusbar": "2.1.3"
 }
 // BOTTOM OF METADATA
 });

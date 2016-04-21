@@ -26,6 +26,7 @@
 		929537BF73794F50823FF699 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDCAC82390D43439D385DF8 /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		77C4BC812BF348DBB737DC95 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6859B16C2F4F4297AD408D3B /* AddressBookUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		025508C519C849138FCDB665 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 723AA149F4234374BA90D46C /* CDVLocation.m */; };
+		8D312788BF6544CE800089D5 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB88A12FAA4D2EA4FA6AB3 /* CDVStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		6859B16C2F4F4297AD408D3B /* AddressBookUI.framework */ = {isa = PBXFileReference; name = "AddressBookUI.framework"; path = "System/Library/Frameworks/AddressBookUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		723AA149F4234374BA90D46C /* CDVLocation.m */ = {isa = PBXFileReference; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		35C40D439C3A4070935492BB /* CDVLocation.h */ = {isa = PBXFileReference; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9DFB88A12FAA4D2EA4FA6AB3 /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9BC421B39A9F4B06A5828C8A /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +211,8 @@
 				F01FBB6024B64A23A95C9872 /* CDVContact.h */,
 				723AA149F4234374BA90D46C /* CDVLocation.m */,
 				35C40D439C3A4070935492BB /* CDVLocation.h */,
+				9DFB88A12FAA4D2EA4FA6AB3 /* CDVStatusBar.m */,
+				9BC421B39A9F4B06A5828C8A /* CDVStatusBar.h */,
 			);
 			name = Plugins;
 			path = "Champagne/Plugins";
@@ -328,6 +333,7 @@
 				D96E7C6CE3124681B7C0B7C0 /* CDVContacts.m in Sources */,
 				EAA174C3FF5B48BE81BDCAE5 /* CDVContact.m in Sources */,
 				025508C519C849138FCDB665 /* CDVLocation.m in Sources */,
+				8D312788BF6544CE800089D5 /* CDVStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
