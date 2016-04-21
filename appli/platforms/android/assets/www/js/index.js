@@ -28,6 +28,7 @@ var app = {
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
         document.getElementById("getPosition").addEventListener("click", app.getPosition);
+        document.getElementById("checkLanguage").addEventListener("click", app.checkLanguage);
     },
     // deviceready Event Handler
     //
@@ -147,7 +148,15 @@ var app = {
         }
 
         var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
-    }
+    },
+
+
+    checkLanguage: function() {
+    navigator.globalization.getPreferredLanguage(
+        function (language) {alert('language: ' + language.value + '\n');},
+        function () {alert('Error getting language\n');}
+    );
+}
 
 };
 

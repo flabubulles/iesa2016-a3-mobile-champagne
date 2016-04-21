@@ -21,6 +21,9 @@
         },
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.champagne.cordova"
         }
     },
     "dependent_plugins": {}
