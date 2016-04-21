@@ -1,0 +1,14 @@
+.full{
+    background: url("../img/background.pg");
+}
+
+.top{
+    height:25%;
+    position: absolute;
+}
+
+#logo{
+    position: relative;
+    top:27px;
+    left:75px;
+}
