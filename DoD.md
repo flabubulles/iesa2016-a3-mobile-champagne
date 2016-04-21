@@ -12,17 +12,17 @@ L'équipe Champagne dispose de :
 
 Pour valider une story :
 
-1- effectuer un "git push" de la fonctionnalité
-2- effectuer un "git pull" pour récupérer la fonctionnalité sur un autre poste
-3- tester que la fonctionnalité fonctionne sur un autre poste
-4- effectuer les corrections 
-5- recommencer les étapes 1 à 4 autant de fois que nécessaires
-6- valider le fonctionnement sur 2-3 postes
-7- effectuer un "git status" sur le dernier poste validant la story
-8- effectuer un "git add"
-9- effectuer un "git status"
-10- effectuer un "git commit -m" avec le message "Story xxx terminée"
-11- effectuer un "git push"
+1. effectuer un "git push" de la fonctionnalité
+1. effectuer un "git pull" pour récupérer la fonctionnalité sur un autre poste
+1. tester que la fonctionnalité fonctionne sur un autre poste
+1. effectuer les corrections 
+1. recommencer les étapes 1 à 4 autant de fois que nécessaires
+1. valider le fonctionnement sur 2-3 postes
+1. effectuer un "git status" sur le dernier poste validant la story
+1. effectuer un "git add"
+1. effectuer un "git status"
+1. effectuer un "git commit -m" avec le message "Story xxx terminée"
+1. effectuer un "git push"
 
 
 ## Journée :
