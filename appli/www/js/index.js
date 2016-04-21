@@ -71,8 +71,9 @@ var app = {
     findPicture: function () {
         $('#findPhotoAlbum').click(function () {
             function cameraSuccess(imageData) {
-                var image = document.getElementById('imgCamera');
-                image.src = "data:image/jpeg;base64," + imageData;
+                var imgCamera = document.getElementById('imgCamera');
+                imgCamera.style.display = 'block';
+                imgCamera.src = imageData;
             };
 
             function cameraError(message) {
@@ -90,8 +91,9 @@ var app = {
 
         $('#camera').click(function () {
             function cameraSuccess(imageURI) {
-                var image = document.getElementById('imgCamera');
-                image.src = imageURI;
+                var imgCamera = document.getElementById('imgCamera');
+                imgCamera.style.display = 'block';
+                imgCamera.src = imageURI;
             };
 
             function cameraError(message) {
