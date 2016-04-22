@@ -1,0 +1,187 @@
+# iesa2016-a3-mobile-champagne
+Nom du projet : Champagne
+
+## JOUR 1 
+-- Utilisations des éléments :
+
+* Plugin Contact
+* Plugin Caméra
+* Plugin Géolocalisation
+
+
+### User Story : Contact
+Titre : Demander un renseignement à un de mes contacts
+
+* En tant que : amateur de cocktail, curieux de nouveautés 
+* Je veux : demande un avis sur des boissons à l'un de mes contacts.
+* Afin de : pouvoir orienter mes achats pour la soirée que je vais bientôt organiser.
+
+Description - Question:
+* Contact (API)
+
+
+### User Story : Camera
+Titre : Partager une photo de boisson
+
+* En tant que : photographe amateur
+* Je veux : prendre une photo d'une boisson 
+* Afin de : la partager pour illustrer un nouveau cocktail
+
+Description - Question:
+* Caméra (API)
+
+
+### User Story : Geolocalisation
+Titre : Trouvez les shops les moins cher autour de moi
+
+* En tant que : étudiant sans revenus fixe
+* Je veux : retouvez les shop de boissons proposant les meilleurs prix autour de moi
+* Afin de : acheter aux meilleurs prix (à spécifier)
+
+Description - Question:
+* Géolocalisation (API)
+
+
+
+
+## JOUR 2 
+-- Utilisations des éléments :
+
+* Plugin Thème UI
+* Plugin Globalization
+* Plugin Analytics
+* Plugin Accès remote
+
+### User Story : Thème UI
+Titre : Naviguer intuitivement
+
+* En tant que : utilisateur de "Champagne"
+* Je veux : avoir une interface agréable et simple 
+* Afin de : pouvoir me repérer facilement dans l'application / retrouver facilement l'application parmis toutes celles que je possède.
+
+Description - Question:
+* Thème UI (API)
+
+
+### User Story : Globalization
+Titre : Accèder au site en multilingues
+
+* En tant que : passionné de voyages
+* Je veux : que mes contacts à l'étranger accèdent à cette application
+* Afin de : pouvoir partager mes boissons préférées testées lors de mes voyages
+
+Description - Question:
+* Globalization (API)
+
+
+### User Story : Analytics
+Titre : Mesurer la portée des publications
+
+* En tant que : créateur de l'application
+* Je veux : mesurer la porté de mon aplication
+* Afin de : pouvoir améliorer les points faibles de mon application
+
+Description - Question:
+* Analytics (API)
+
+
+### User Story : Accès remote (à revoir)
+Titre : Toucher le plus grand nombre de contacts possibles
+
+* En tant que : utilisateur de réseaux sociaux
+* Je veux : pouvoir lier l'application à facebook
+* Afin de : pouvoir toucher tous mes  contacts et accèder à leurs préférences
+
+Description - Question:
+* Accès remote (API)
+
+
+
+
+
+## JOUR 3 
+-- Utilisations des éléments :
+
+* Plugin Network Information
+* Plugin Device Orientation
+* Plugin Framework UI
+* Plugin Status Bar
+
+
+### User Story : Network Information
+Titre : Vérifier l'état de ma connexion au réseau
+
+* En tant que : Voyageur fréquent
+* Je veux : connaitre la nature de la connexion
+* Afin de : ne pas faire de hors-forfait lors de ma connexion à un réseau à l'étranger
+
+Description - Question:
+* Tester la perte de connexion -> popup
+
+
+### User Story : Device Orientation
+Titre : Garder une ergonomie optimale quel que soit le device
+
+* En tant que : utilisateur de tablette
+* Je veux : pouvoir profiter de l'application de la même façon en paysage et en portrait
+* Afin de : retrouver mes habitudes quel que soit le device
+
+Description - Question:
+* Tester le mode paysage -> popup
+
+
+### User Story : Framework UI
+Titre : Swipe Navigation
+
+* En tant que : utilisateur intensif de mon téléphone
+* Je veux : pouvoir faire un retour rapide en swipe
+* Afin de : ne pas avoir nécéssairement à chercher le bouton retour et gagner en rapidité
+
+
+### User Story : Status Bar
+Titre : Garder un oeil sur la localisation
+
+* En tant que : organisateur toujours en retard dans son organisation
+* Je veux : pouvoir voir l'heure sans avoir à faire de manipulation
+* Afin de : pouvoir me rendre compte qu'il faut que je me dépêche dans mon organisation
+
+Description - Question:
+* supprimer la Status Bar
+
+
+
+
+## JOUR 4 
+-- Utilisations des éléments :
+
+* Plugin Social Sharing
+* Plugin Storage
+* Plugin Killer Feature
+
+
+### User Story : Social Sharing
+Titre : Se faire payer des coups pour sons anniversaire
+
+* En tant que : personne fêtant prochainement mon anniversaire dans un bar entre amis
+* Je veux : pouvoir partager mes cocktails préférés
+* Afin que : l'on puisse me payer des coups sans se tromper sur mes envies 
+
+
+### User Story : Storage
+Titre : Rédiger partout et tout le temps
+* En tant que : technophile dans les transports en commun
+* Je veux : pouvoir retrouver mes infos enregistrées
+* Afin de : pouvoir reprendre la rédaction de la recette d'un cocktail en plusieurs fois sans perdre mes données
+
+Description - Question:
+* tester la conservation des données en 'Killant' l'application
+
+
+### User Story : Status Bar
+Titre : Faire des économies sur les achats d'alcool
+* En tant que : personne proche de mes économies
+* Je veux : gagner des points pour chaue cocktail approuvé par mes pairs
+* Afin de : obtenir des réductions dans les shops près de chez moi
+
+Description - Question:
+* supprimer la Status Bar
