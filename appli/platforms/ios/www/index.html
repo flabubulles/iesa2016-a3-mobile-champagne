@@ -43,8 +43,8 @@
     <div id="deviceready" class="blink">
         <p class="event listening">Connexion &agrave; l'appareil</p>
         <p class="event received">L'appareil est pr&ecirc;t</p>
-        <input id="find" type="text">
-        <button id="findButton" type="button">Rechercher</button>
+        <input id="find" type="text" label="contact_name">
+        <button id="findButton" type="button" for="contact_name">Rechercher</button>
         <button id="camera" type="button">Appareil</button>
         <button id="findPhotoAlbum">Album</button>
         <button id="getPosition">Localisation</button>
@@ -52,7 +52,8 @@
         <div id="name" type="text"></div>
 
         <button id="checkLanguage">Click for language</button>
-        <button id="compassPosition">Click for orientation</button>
+        <p id="orientation"></p>
+        <button id="clickme">Click me</button>
     </div>
 </div>
 <script type="text/javascript" src="cordova.js"></script>

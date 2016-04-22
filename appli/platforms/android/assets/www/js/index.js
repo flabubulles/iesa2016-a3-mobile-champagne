@@ -27,6 +27,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.getElementById("findButton").addEventListener("click", app.findContact);
         document.getElementById("getPosition").addEventListener("click", app.getPosition);
         document.getElementById("checkLanguage").addEventListener("click", app.checkLanguage);
         document.getElementById("compassPosition").addEventListener("click", app.compassPosition);
@@ -39,37 +40,36 @@ var app = {
         app.receivedEvent('deviceready');
         app.findPicture();
         StatusBar.hide();
-        navigator.compass.getCurrentHeading(onSuccess, onError);
+        //navigator.compass.getCurrentHeading(onSuccess, onError);
+
+        $('#clickme').click(function(){
+            app.compassPosition();
+        });
+
         //app.getPosition();
+    },
 
-        var findContacts = function() {
+    findContact: function (){
 
+        var finder = $('#find').val();
 
-            $('#findButton').click(function() {
-
-                var finder = $('#find').val();
-                // $('#name').html(finder);
-
-                function onSuccess(contacts) {
-                    $('#name').html(contacts[0].name.givenName+' '+contacts[0].name.familyName+' '+contacts[0].phoneNumbers[0].value+' '+contacts[0].emails[0].value+' '+contacts[0].organizations[0].title);
-                    alert('Found ' + contacts.length + ' contacts.');
-                };
-
-                function onError(contactError) {
-                    alert('onError!');
-                };
-
-                // find contact 
-                var options = new ContactFindOptions();
-                options.filter= finder; 
-                var fields = ["displayName", "name"];
-                navigator.contacts.find(fields, onSuccess, onError, options);
-
-            });
+        function onSuccess(contacts) {
+            $('#name').html(contacts[0].name.givenName+' '+contacts[0].name.familyName+' '+contacts[0].phoneNumbers[0].value+' '+contacts[0].emails[0].value+' '+contacts[0].organizations[0].title);
+            alert('Found ' + contacts.length + ' contacts.');
         }
 
-        findContacts();
+        function onError(contactError) {
+            alert('Une erreur est survenue');
+        }
+
+        // find contact
+        var options = new ContactFindOptions();
+        options.filter = finder;
+        var fields = ["displayName", "name"];
+        navigator.contacts.find(fields, onSuccess, onError, options);
+
     },
+
 
     findPicture: function () {
         $('#findPhotoAlbum').click(function () {
@@ -126,16 +126,19 @@ var app = {
 
     compassPosition: function () {
         function onSuccess(heading) {
-            alert('Heading: ' + heading.magneticHeading);
-        }
+            //alert('Heading: ' + heading.magneticHeading);
+            $('#orientation').html(heading.magneticHeading);
 
-        // onError: Failed to get the heading
-        //
-        function onError(compassError) {
-            alert('Compass Error: ' + compassError.code);
-        }
+            //$('#tonparagraphe').val(heading.magneticHeading);
+        };
+
+        function onError(error) {
+            //alert('CompassError: ' + error.code);
+            $('#orientation').html('CompassError' + error.code);
+        };
+
+        navigator.compass.getCurrentHeading(onSuccess, onError);
     },
-
 
     getPosition: function () {
 
