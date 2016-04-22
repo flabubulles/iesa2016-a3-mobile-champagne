@@ -123,7 +123,7 @@ var app = {
             element.innerHTML = 'Boussole: ' + Math.round(heading.magneticHeading * 100) / 100;
         }
         function onError(error) {
-            alert('CompassError: ' + error.code);
+            element.innerHTML= "Boussole indisponible";
         }
         var options = {
             frequency: 0

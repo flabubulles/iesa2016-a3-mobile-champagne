@@ -40,8 +40,6 @@ var app = {
         app.findPicture();
         StatusBar.hide();
         app.compassPosition();
-
-        //app.getPosition();
     },
 
     findContact: function (){
@@ -125,7 +123,7 @@ var app = {
             element.innerHTML = 'Boussole: ' + Math.round(heading.magneticHeading * 100) / 100;
         }
         function onError(error) {
-            alert('CompassError: ' + error.code);
+            element.innerHTML= "Boussole indisponible";
         }
         var options = {
             frequency: 0
@@ -133,7 +131,7 @@ var app = {
 
         navigator.compass.watchHeading(onSuccess, onError, options);
     },
-    
+
 
     getPosition: function () {
 
