@@ -14,3 +14,6 @@ Travailler un Framework UI mobile.
 
 ### Daniel :
 S'organiser et travailler en groupe grâce à GitHub pour coordonner les phases de travail.
+
+### Morgane :
+Découverte de l'univers du mobile, Meilleure compréhension du javascript, Meilleure gestion de projet
