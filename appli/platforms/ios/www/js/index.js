@@ -30,7 +30,6 @@ var app = {
         document.getElementById("findButton").addEventListener("click", app.findContact);
         document.getElementById("getPosition").addEventListener("click", app.getPosition);
         document.getElementById("checkLanguage").addEventListener("click", app.checkLanguage);
-        document.getElementById("compassPosition").addEventListener("click", app.compassPosition);
     },
     // deviceready Event Handler
     //
@@ -40,13 +39,7 @@ var app = {
         app.receivedEvent('deviceready');
         app.findPicture();
         StatusBar.hide();
-        //navigator.compass.getCurrentHeading(onSuccess, onError);
-
-        $('#clickme').click(function(){
-            app.compassPosition();
-        });
-
-        //app.getPosition();
+        app.compassPosition();
     },
 
     findContact: function (){
@@ -125,20 +118,20 @@ var app = {
     },
 
     compassPosition: function () {
+        var element = document.getElementById("boussole");
         function onSuccess(heading) {
-            //alert('Heading: ' + heading.magneticHeading);
-            $('#orientation').html(heading.magneticHeading);
-
-            //$('#tonparagraphe').val(heading.magneticHeading);
-        };
-
+            element.innerHTML = 'Boussole: ' + Math.round(heading.magneticHeading * 100) / 100;
+        }
         function onError(error) {
-            //alert('CompassError: ' + error.code);
-            $('#orientation').html(error.code);
+            element.innerHTML= "Boussole indisponible";
+        }
+        var options = {
+            frequency: 0
         };
 
-        navigator.compass.getCurrentHeading(onSuccess, onError);
+        navigator.compass.watchHeading(onSuccess, onError, options);
     },
+
 
     getPosition: function () {
 
