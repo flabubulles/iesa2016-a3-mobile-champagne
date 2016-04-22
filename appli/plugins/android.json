@@ -24,6 +24,9 @@
         },
         "cordova-plugin-globalization": {
             "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.champagne.cordova"
         }
     },
     "dependent_plugins": {}
