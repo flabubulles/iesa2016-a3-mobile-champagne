@@ -29,6 +29,7 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
         document.getElementById("getPosition").addEventListener("click", app.getPosition);
         document.getElementById("checkLanguage").addEventListener("click", app.checkLanguage);
+        document.getElementById("compassPosition").addEventListener("click", app.compassPosition);
     },
     // deviceready Event Handler
     //
@@ -38,6 +39,7 @@ var app = {
         app.receivedEvent('deviceready');
         app.findPicture();
         StatusBar.hide();
+        navigator.compass.getCurrentHeading(onSuccess, onError);
         //app.getPosition();
 
         var findContacts = function() {
@@ -122,6 +124,18 @@ var app = {
         console.log('Received Event: ' + id);
     },
 
+    compassPosition: function () {
+        function onSuccess(heading) {
+            alert('Heading: ' + heading.magneticHeading);
+        }
+
+        // onError: Failed to get the heading
+        //
+        function onError(compassError) {
+            alert('Compass Error: ' + compassError.code);
+        }
+    },
+
 
     getPosition: function () {
 
@@ -159,6 +173,7 @@ var app = {
 }
 
 };
+
 
 
 app.initialize();

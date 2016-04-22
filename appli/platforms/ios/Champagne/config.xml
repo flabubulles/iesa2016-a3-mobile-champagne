@@ -31,6 +31,9 @@
     <feature name="Globalization">
         <param name="ios-package" value="CDVGlobalization" />
     </feature>
+    <feature name="Compass">
+        <param name="ios-package" value="CDVCompass" />
+    </feature>
     <name>Champagne</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
