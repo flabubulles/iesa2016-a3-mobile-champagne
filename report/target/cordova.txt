@@ -15,3 +15,6 @@ La documentation Cordova est intuitive et permet de faire de bons progrès rapide
 
 ### Daniel :
 Cet atelier m'a permis de découvrir Cordova. Celui-ci s'avère bien moins optimisé que d'autres (Titanium par exemple), et la documentation se limite uniquement à donner de vagues indications quand un premier contact serait préférable en "pas-à-pas".
+
+### Morgane :
+L'univers du mobile se révèle être plus complexe que je ne le pensais, mais offre de nombreuses possibilité pour que chacun puisse, dans la mesure du possible, créer un projet qui lui tiens à coeur
