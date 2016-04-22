@@ -9,4 +9,4 @@ Nom du projet : Champagne
 * Pauline Risselet
 
 ## Pitch :
-Gr‚ce ‡ l'application Champagne, retrouver les boissons prÈfÈrÈes de vos amis Facebook
+Gr√¢ce √† l'application Champagne, retrouver les boissons pr√©f√©r√©es de vos amis Facebook
