@@ -43,6 +43,10 @@
                         {
                             "xml": "<feature name=\"Compass\"><param name=\"ios-package\" value=\"CDVCompass\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -79,6 +83,9 @@
             "PACKAGE_NAME": "com.champagne.cordova"
         },
         "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.champagne.cordova"
         }
     },
@@ -283,6 +290,23 @@
             "clobbers": [
                 "navigator.compass"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/www/network.js",
+            "id": "cordova-plugin-network-information.network",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "navigator.connection",
+                "navigator.network.connection"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+            "id": "cordova-plugin-network-information.Connection",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "Connection"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -292,6 +316,7 @@
         "cordova-plugin-geolocation": "2.1.0",
         "cordova-plugin-statusbar": "2.1.3",
         "cordova-plugin-globalization": "1.0.3",
-        "cordova-plugin-device-orientation": "1.0.3"
+        "cordova-plugin-device-orientation": "1.0.3",
+        "cordova-plugin-network-information": "1.2.1"
     }
 }

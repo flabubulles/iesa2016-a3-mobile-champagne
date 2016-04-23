@@ -34,6 +34,9 @@
     <feature name="Compass">
         <param name="ios-package" value="CDVCompass" />
     </feature>
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
     <name>Champagne</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

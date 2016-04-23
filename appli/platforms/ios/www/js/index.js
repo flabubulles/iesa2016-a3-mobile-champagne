@@ -127,7 +127,7 @@ var app = {
         }
         var options = {
             frequency: 0
-        };
+        };cordova plugin add cordova-plugin-network-information
 
         navigator.compass.watchHeading(onSuccess, onError, options);
     },
