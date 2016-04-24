@@ -33,8 +33,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Champagne - Fran&ccedil;ais</title>
 </head>
 <body>
@@ -47,8 +46,8 @@
         <button id="findButton" type="button" for="contact_name">Rechercher</button>
         <button id="camera" type="button">Appareil</button>
         <button id="findPhotoAlbum">Album</button>
-        <button id="getPosition">Localisation</button>
-        <img style="display:none;width:100px;height:100px;" id="imgCamera" src="" />
+        <a href="map.html"><button>Géolocalisation</button></a>
+        <img style="display:none;width:100px;height:100px;" id="imgCamera" src=""/>
         <div id="name" type="text"></div>
         <p id="boussole"> </p>
         <button id="checkLanguage">Click for language</button>
@@ -58,7 +57,6 @@
 </div>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
