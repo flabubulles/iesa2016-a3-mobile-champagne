@@ -30,6 +30,7 @@ var app = {
         document.getElementById("findButton").addEventListener("click", app.findContact);
         document.getElementById("getPosition").addEventListener("click", app.getPosition);
         document.getElementById("checkLanguage").addEventListener("click", app.checkLanguage);
+        document.getElementById("getPosition").addEventListener("click", app.getPosition);
     },
     // deviceready Event Handler
     //
@@ -40,6 +41,7 @@ var app = {
         app.findPicture();
         StatusBar.hide();
         app.compassPosition();
+        app.getPosition();
     },
 
     findContact: function (){
@@ -127,7 +129,7 @@ var app = {
         }
         var options = {
             frequency: 0
-        };cordova plugin add cordova-plugin-network-information
+        };
 
         navigator.compass.watchHeading(onSuccess, onError, options);
     },
@@ -135,27 +137,35 @@ var app = {
 
     getPosition: function () {
 
-        var options = {
-            enableHighAccuracy: true,
-            maximumAge: 3600000
+        function initMap(){
+            var onSuccess = function (position){
+                var lat = position.coords.latitude,
+                    lng = position.coords.longitude;
+
+                var mycoord = new google.maps.LatLng(lat,lng);
+
+                var mapOptions = {
+                    center: mycoord,
+                    zoom: 16,
+                    mapTypeControl: false,
+                    streetViewControl: false,
+                    zoomControl: true
+                };
+
+                var map = new google.maps.Map(document.getElementById('map'),mapOptions);
+
+                var marker = new google.maps.Marker({
+                    position: mycoord,
+                    map: map
+                });
+            };
+
+            function onError(error) {
+                alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
+            }
+            navigator.geolocation.getCurrentPosition(onSucces,onError);
         }
-
-
-        function onSuccess(position) {
-
-            alert('Latitude: '          + position.coords.latitude          + '\n' +
-                'Longitude: '         + position.coords.longitude         + '\n' +
-                'Altitude: '          + position.coords.altitude          + '\n' +
-                'Accuracy: '          + position.coords.accuracy          + '\n' +
-                'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
-                'Heading: '           + position.coords.heading           + '\n' +
-                'Speed: '             + position.coords.speed             + '\n' +
-                'Timestamp: '         + position.timestamp                + '\n');
-        };
-
-        function onError(error) {
-            alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
-        }
+        google.maps.event.addDomListener(window,'load',initMap);
 
         var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
     },
