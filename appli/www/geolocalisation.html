@@ -1,0 +1,39 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">
+      <img src="img/logo_2.png">
+    </div>
+    <div class="right">
+      <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+    </div>
+  </div>
+</div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="contact" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+              <div class="content-block">
+                <div class="app">
+                    <div id="deviceready" class="blink">
+                        <p class="event listening">Connexion &agrave; l'appareil</p>
+                        <p class="event received">L'appareil est pr&ecirc;t</p>
+                        <input id="find" type="text" label="contact_name">
+                        <button id="findButton" type="button" for="contact_name">Rechercher</button>
+                        <button id="camera" type="button">Appareil</button>
+                        <button id="findPhotoAlbum">Album</button>
+                        <button id="getPosition">Localisation</button>
+                        <img style="display:none;width:100px;height:100px;" id="imgCamera" src="" />
+                        <div id="name" type="text"></div>
+                        <p id="boussole"> </p>
+                        <button id="checkLanguage">Click for language</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+  </div>
+</div>

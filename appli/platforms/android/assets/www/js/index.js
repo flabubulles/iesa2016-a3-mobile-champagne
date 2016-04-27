@@ -27,10 +27,21 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        document.getElementById("findButton").addEventListener("click", app.findContact);
         document.getElementById("getPosition").addEventListener("click", app.getPosition);
         document.getElementById("checkLanguage").addEventListener("click", app.checkLanguage);
-        document.getElementById("getPosition").addEventListener("click", app.getPosition);
+        document.addEventListener('deviceready', function() {
+            var networkState = navigator.connection.type;
+            var states = {};
+            states[Connection.UNKNOWN]  = 'Unknown connection';
+            states[Connection.ETHERNET] = 'Ethernet connection';
+            states[Connection.WIFI]     = 'WiFi connection';
+            states[Connection.CELL_2G]  = 'Cell 2G connection';
+            states[Connection.CELL_3G]  = 'Cell 3G connection';
+            states[Connection.CELL_4G]  = 'Cell 4G connection';
+            states[Connection.CELL]     = 'Cell generic connection';
+            states[Connection.NONE]     = 'No network connection';
+               alert('Connection type: ' + states[networkState]);
+                });
     },
     // deviceready Event Handler
     //
@@ -42,29 +53,35 @@ var app = {
         StatusBar.hide();
         app.compassPosition();
         app.getPosition();
-    },
 
-    findContact: function (){
+        var findContacts = function() {
 
-        var finder = $('#find').val();
 
-        function onSuccess(contacts) {
-            $('#name').html(contacts[0].name.givenName+' '+contacts[0].name.familyName+' '+contacts[0].phoneNumbers[0].value+' '+contacts[0].emails[0].value+' '+contacts[0].organizations[0].title);
-            alert('Found ' + contacts.length + ' contacts.');
+            $('#findButton').click(function() {
+
+                var finder = $('#find').val();
+                // $('#name').html(finder);
+
+                function onSuccess(contacts) {
+                    $('#name').html(contacts[0].name.givenName+' '+contacts[0].name.familyName+' '+contacts[0].phoneNumbers[0].value+' '+contacts[0].emails[0].value+' '+contacts[0].organizations[0].title);
+                    alert('Found ' + contacts.length + ' contacts.');
+                };
+
+                function onError(contactError) {
+                    alert('onError!');
+                };
+
+                // find contact 
+                var options = new ContactFindOptions();
+                options.filter= finder; 
+                var fields = ["displayName", "name"];
+                navigator.contacts.find(fields, onSuccess, onError, options);
+
+            });
         }
 
-        function onError(contactError) {
-            alert('Une erreur est survenue');
-        }
-
-        // find contact
-        var options = new ContactFindOptions();
-        options.filter = finder;
-        var fields = ["displayName", "name"];
-        navigator.contacts.find(fields, onSuccess, onError, options);
-
+        findContacts();
     },
-
 
     findPicture: function () {
         $('#findPhotoAlbum').click(function () {
@@ -179,7 +196,6 @@ var app = {
 }
 
 };
-
 
 
 app.initialize();

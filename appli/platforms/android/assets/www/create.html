@@ -1,0 +1,68 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">
+      <img src="img/logo_2.png">
+    </div>
+    <div class="right">
+      <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+    </div>
+  </div>
+</div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="contact" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+    <div class="content-block-title title-page">Rajouter mon image</div>
+      <div class="img-parcourir">
+        <img style="display:none;width:100px;height:100px;" id="imgCamera" src="" />
+        </div>
+                <div class="app">
+                    <div id="deviceready" class="blink">
+
+                        <p class="event listening">Connexion &agrave; l'appareil</p>
+                        <p class="event received">L'appareil est pr&ecirc;t</p>
+                        <button id="camera" type="button">Appareil</button>
+                        <button id="findPhotoAlbum">Album</button>
+                         <button onclick="window.plugins.socialsharing.share('Je viens de creer mon cocktail sur', null, 'http://images.bigoven.com/image/upload/t_recipe-256/mojito-10.jpg', 'http://www.champagne.nl')">Partager</button>
+                    </div>
+
+                    <div class="content-block-title title-page">Mojito</div>
+                    <div class="title-cocktail">
+                  <p>Temps de préparation : 5 minutes</p>
+                  </div>
+
+                  <div class="content-block-title title-page">Ingrédients</div class="ingredients">
+                    
+                  <ul>
+                    <li>
+                      <p>3 cuillères à café de sucre de canne en poudre</p>
+                    </li>
+                    <li>
+                      <p>1/2 citron vert</p>
+                    </li>
+                    <li>
+                      <p>1 branche de menthe bien fournie</p>
+                    </li>
+                    <li>
+                      <p>eau gazeuse</p>
+                    </li>
+                    <li>
+                      <p>rhum (cubain de préférence, c'est le pays du mojito)</p>
+                    </li>
+                    <li>
+                      <p>glaçons</p>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+
+              </div>
+
+            </div>
+  </div>
+</div>

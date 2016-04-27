@@ -30,6 +30,9 @@
         },
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.champagne.cordova"
         }
     },
     "dependent_plugins": {}
