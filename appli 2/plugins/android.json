@@ -1,0 +1,39 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.champagne.cordova"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.champagne.cordova"
+        }
+    },
+    "dependent_plugins": {}
+}
