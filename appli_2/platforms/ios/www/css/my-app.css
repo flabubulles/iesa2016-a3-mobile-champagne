@@ -1,0 +1,41 @@
+.menu li{
+	list-style: none;
+}
+
+.menu a{
+	color: #fff;
+}
+
+.title-page{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.title-cocktail p{
+	font-size: 12px;
+}
+
+.ingredients li p{
+	font-size: 10px;
+}
+
+.img-parcourir {
+	text-align: center;
+}
+
+.img-parcourir img{
+	width: 100%;
+	border: 1px solid #fff;
+}
+
+.lien-cocktail {
+	position: absolute;
+	left: 0;
+	right: 0;
+	color: #fff;
+	text-decoration: none;
+}
+
+.content-block-title{
+	text-align: center;
+}
